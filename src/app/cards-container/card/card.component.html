@@ -1,0 +1,19 @@
+<mat-card class="card" [@myAnimation]>
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{countryData.country}}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="{{countryFlag}}" alt="country flag" class="countryFlagImage">
+  <mat-card-content>
+    <div *ngIf="!dateHasChanged">Last update date: {{countryData.lastUpdate}}</div>
+    <div *ngIf="dateHasChanged">Picked date: {{countryData.lastUpdate}}</div>
+    <div>Death: {{countryData.deaths}}</div>
+    <div>Confirmed: {{countryData.confirmed}}</div>
+    <div>Recovered: {{countryData.recovered}}</div>
+  </mat-card-content>
+  <mat-card-actions>
+    <app-card-actions [countryData]="countryData" (dateHasChanged)="onDateHasChanged($event)"></app-card-actions>
+  </mat-card-actions>
+</mat-card>
+
+

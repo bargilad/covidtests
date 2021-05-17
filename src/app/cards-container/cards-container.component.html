@@ -1,0 +1,9 @@
+<div class="cardsContainer">
+  <ul *ngIf="countriesDetails" class="countriesList">
+    <li *ngFor="let stateDetails of countriesDetails">
+      <app-card [countryData]="stateDetails"></app-card>
+    </li>
+  </ul>
+
+  <div *ngIf="!countriesDetails">No results</div>
+</div>

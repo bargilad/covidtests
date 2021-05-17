@@ -1,0 +1,30 @@
+{
+  "country": {
+    "italy": [
+      {
+        "country":"Italy",
+        "code":"IT",
+        "confirmed":219070,
+        "recovered":105186,
+        "critical":1027,
+        "deaths":30560,
+        "latitude":41.87194,
+        "longitude":12.56738,
+        "lastChange":"2020-05-10T18:12:02+02:00",
+        "lastUpdate":"2020-05-11T04:00:03+02:00"
+      }
+    ],
+    "israel": [
+{      "country":"Israel",
+      "code":"IL",
+      "confirmed":839119,
+      "recovered":832072,
+      "critical":71,
+      "deaths":6382,
+      "latitude":31.046051,
+      "longitude":34.851612,
+      "lastChange":"2021-05-16T22:46:33+02:00",
+      "lastUpdate":"2021-05-17T18:30:03+02:00"}
+    ]
+  }
+}

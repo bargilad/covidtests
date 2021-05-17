@@ -1,0 +1,14 @@
+<div class="covidApp">
+  <app-navigation-bar *ngIf="receivedResults" (changePresentationEvent)="changePresentation($event)"
+                      (searchForCountryEvent)="searchForCountry($event)"></app-navigation-bar>
+  <div *ngIf="!receivedResults" class="loaderWrapper">
+    <div class="loader"></div>
+  </div>
+  <app-cards-container *ngIf="receivedResults" [countriesDetails] = countriesDetails></app-cards-container>
+  <div class="noResults" *ngIf="shouldPresentNoResultsError" >
+    NO RESULTS FOUND
+    <img class="noResultsPic" src="assets/images/no-results.png">
+  </div>
+</div>
+
+

@@ -1,0 +1,10 @@
+.cardActions{
+  display: flex;
+  flex-direction: column;
+  .favoritesBtn{
+    height: 60px;
+  }
+  .datePickerBtn{
+    height: 60px;
+  }
+}

@@ -1,0 +1,13 @@
+<div class="cardActions">
+  <button mat-button (click)="addToFavorites()" class="favoritesBtn">Add to favorites</button>
+  <mat-form-field appearance="legacy" class="datePickerBtn">
+    <mat-label>Status by date</mat-label>
+    <input matInput [matDatepicker]="datepicker"
+           [min]="minDate"
+           (dateChange)="dateChanged($event)">
+    <mat-datepicker-toggle matSuffix [for]="datepicker">
+      <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+    </mat-datepicker-toggle>
+    <mat-datepicker #datepicker (dateChange)="dateChanged($event)"></mat-datepicker>
+  </mat-form-field>
+</div>
